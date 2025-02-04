@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: ""
+  datasource:
+    url: jdbc:mysql://localhost:3306/hr_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+file:
+  upload-dir: C:/Users/edasadmin/Desktop/document/Aadhaar_Upload
+
+project:
+  image: images/
+
+cors:
+  allowed:
+    origins: "*"
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: OFF
+        type: OFF
+    org.springframework.web: WARN
+    org.springframework: WARN
+    root: WARN
+
+server:
+  port: 8080

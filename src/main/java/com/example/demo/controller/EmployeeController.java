@@ -50,20 +50,6 @@ public class EmployeeController {
 		this.employeeService = employeeService;
 	}
 
-	/**
-	 * @PostMapping public ResponseEntity<EmployeeDto>
-	 *              createEmployee(@RequestPart("employee") EmployeeDto
-	 *              employeeDto, @RequestParam("image") MultipartFile image) { try {
-	 *              if (employeeDto == null || image == null || image.isEmpty()) {
-	 *              return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST); }
-	 *              EmployeeDto savedEmployee =
-	 *              employeeService.createEmployee(employeeDto, image, path); return
-	 *              new ResponseEntity<>(savedEmployee, HttpStatus.CREATED); } catch
-	 *              (IOException e) { return new ResponseEntity<>(null,
-	 *              HttpStatus.INTERNAL_SERVER_ERROR); }
-	 * 
-	 *              }
-	 **/
 
 	@GetMapping("{id}")
 	public ResponseEntity<EmployeeDto> getEmployeeById(@PathVariable("id") Long employeeId) {

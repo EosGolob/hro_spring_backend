@@ -18,11 +18,4 @@ public class HrManagementApplication extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
 		return builder.sources(HrManagementApplication.class);
 	}
-
-//	@Bean
-//	public ModelMapper modelMapper() {
-//		
-//		return new ModelMapper();
-//		
-//	}
 }

@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: ""  # You can specify your application name here if needed.
+  
+  server:
+    port: 9001
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/backup_hr_db  # Or use the other DB URL by uncommenting it
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+
+project:
+  image: images/
+
+file:
+  upload-dir: C:/Users/edasadmin/Desktop/document/Aadhaar_Upload
+
+cors:
+  allowed:
+    origins: http://localhost:3001

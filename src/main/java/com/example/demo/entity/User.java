@@ -1,10 +1,8 @@
 package com.example.demo.entity;
 
-import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
-
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -15,18 +13,9 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 
 @Entity
@@ -140,36 +129,6 @@ import lombok.Setter;
 	
 	
 	
-//	@Override
-//	public Collection<? extends GrantedAuthority> getAuthorities() {
-//		
-//		
-//		Set<Authority> set = new HashSet<>();
-//		this.userRoles.forEach(userRole -> {
-//			set.add(new Authority(userRole.getRole().getRoleName()));
-//		});
-//		return null;
-//	}
-//
-//	@Override
-//	public String getUsername() {
-//		return null;
-//	}
-//
-//	@Override
-//	public boolean isAccountNonExpired() {
-//		return true;
-//	}
-//
-//	@Override
-//	public boolean isAccountNonLocked() {
-//		return true;
-//	}
-//
-//	@Override
-//	public boolean isCredentialsNonExpired() {
-//		return true;
-//	}
 
 
 	

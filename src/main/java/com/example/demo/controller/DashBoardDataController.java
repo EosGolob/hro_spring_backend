@@ -19,7 +19,6 @@ import com.example.demo.serviceImpl.EmployeeServiceDashBoardImpl;
 
 @RestController
 @RequestMapping("/api/dashBord")
-//@CrossOrigin(origins = {"http://localhost:3001","http://20.193.159.186:3001"})
 @CrossOrigin(originPatterns = "*")
 public class DashBoardDataController {
 
